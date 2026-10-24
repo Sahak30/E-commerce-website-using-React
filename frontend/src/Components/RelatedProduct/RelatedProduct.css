@@ -1,0 +1,122 @@
+.RelatedProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.RelatedProduct h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.RelatedProduct hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.RelatedProducts-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+/*media query for the 1280px screen*/
+
+@media (max-width: 1280px) {
+  .RelatedProducts-item h1 {
+    font-size: 40px;
+  }
+  .RelatedProducts-item hr {
+    width: 160px;
+  }
+  .RelatedProducts-item_items {
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
+
+/*media query for the 1024px screen*/
+
+@media (max-width: 1024px) {
+  .RelatedProducts-item_items {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .RelatedProducts-item h1 {
+    font-size: 35px;
+  }
+  .RelatedProducts-item hr {
+    width: 140px;
+  }
+  .RelatedProducts-item_items {
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+/*media query for the 800px screen*/
+
+@media (max-width: 800px) {
+  .RelatedProducts-item {
+    gap: 6px;
+  }
+  .RelatedProducts-item h1 {
+    font-size: 20px;
+  }
+  .RelatedProducts-item hr {
+    width: 120px;
+  }
+  .RelatedProducts-item_items {
+    gap: 5px;
+  }
+}
+
+/*media query for the 500px screen*/
+@media (max-width: 500px) {
+  .RelatedProduct {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    gap: 6px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  .RelatedProduct h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .RelatedProduct hr {
+    width: 100px;
+    height: 4px;
+    margin: 0;
+  }
+
+  .RelatedProducts-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .RelatedProducts-item .items {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .RelatedProducts-item .items img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+  }
+}

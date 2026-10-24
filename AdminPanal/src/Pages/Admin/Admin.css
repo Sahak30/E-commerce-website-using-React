@@ -1,0 +1,10 @@
+.admin {
+  display: flex;
+}
+
+/* Styling for 800px screen*/
+@media (max-width: 800px) {
+  .admin {
+    flex-direction: column;
+  }
+}

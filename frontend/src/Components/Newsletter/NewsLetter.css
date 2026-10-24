@@ -1,0 +1,162 @@
+.newsletter {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 100px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fed1ff 0%, #e1ffea22 60%);
+  gap: 30px;
+}
+
+.newsletter h1 {
+  color: #454545;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.newsletter p {
+  color: #454545;
+  font-size: 20px;
+}
+
+.new-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+}
+
+.new-form input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: poppins;
+  font-size: 16px;
+}
+.new-form button {
+  width: 210px;
+  height: 70px;
+  border-radius: 70px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+}
+
+/* styling for 1280px screen*/
+@media (max-width: 1280px) {
+  .newsletter {
+    padding: 0px 80px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    gap: 20px;
+  }
+  .newsletter h1 {
+    font-size: 36px;
+  }
+  .newsletter p {
+    font-size: 16px;
+  }
+  .new-form {
+    width: 600px;
+    height: 60px;
+  }
+  .newsletter input {
+    width: 400px;
+  }
+  .new-form button {
+    width: 160px;
+    height: 60px;
+  }
+}
+
+/* styling for 1024px screen*/
+@media (max-width: 1024px) {
+  .newsletter {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .newsletter h1 {
+    font-size: 30px;
+  }
+  .newsletter p {
+    font-size: 14px;
+  }
+  .new-form {
+    width: 500px;
+    height: 50px;
+  }
+  .newsletter input {
+    width: 300px;
+    font-size: 14px;
+  }
+  .new-form button {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* styling for 800px screen*/
+@media (max-width: 800px) {
+  .newsletter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 35vh;
+  }
+  .newsletter h1 {
+    font-size: 20px;
+  }
+  .newsletter p {
+    font-size: 12px;
+  }
+  .new-form {
+    width: 400px;
+    height: 40px;
+  }
+  .new-form input {
+    width: 200px;
+    font-size: 13px;
+  }
+  .new-form button {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+/* styling for 500px screen*/
+@media (max-width: 500px) {
+  .newsletter {
+    height: 25vh;
+    width: 100%;
+    padding: 0px;
+    gap: 15px;
+  }
+  .newsletter h1 {
+    font-size: 16px;
+  }
+  .newsletter p {
+    font-size: 13px;
+    max-width: 200px;
+    text-align: center;
+  }
+  .new-form {
+    width: 300px;
+  }
+  .new-form input {
+    width: 130px;
+  }
+}
